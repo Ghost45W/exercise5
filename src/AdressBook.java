@@ -22,7 +22,7 @@ public class AdressBook {
                 '}';
     }
 
-    public void addPerson(Person a){
+    public void addPerson(Person a) {
         book.add(a);
     }
     public void removePerson(Person a){

@@ -37,7 +37,9 @@ public class Main {
                 bigBookOfAdress.displayContacts();
                 System.out.println("What contact would you like to remove?");
                 String name = input.nextLine();
-                bigBookOfAdress.removePerson(new);
+                System.out.println("What is the email of the contact you would like to remove?");
+                String email = input.nextLine();
+                bigBookOfAdress.removePerson(new Person(name,email));
                 userInput = 0;
             }
             if (userInput ==3){
@@ -45,11 +47,6 @@ public class Main {
                 userInput = 0;
             }
         }
-
-
-
-
-        System.out.println(bigBookOfAdress.getBook());
 
 
     }
